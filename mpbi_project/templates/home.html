@@ -39,7 +39,13 @@
     <div id="mypage"></div>
     <header> 
     <div class="container">
-    
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
         <h1>МЕТПРОМСТРОЙ ИНВЕСТ</h1>
     <h3>Здесь рассказывается об устройстве социальной составляющей проекта,
      а также перечисляются актуальные задачи и работы.
@@ -133,7 +139,7 @@
     </div>
    <div class="col-sm-4">
    <div class="col-sm-4"></div>
-<form method="post" novalidate>
+<form method="post" action="{% url 'home' %}">
   {% csrf_token %}
 
   {% for hidden_field in form.hidden_fields %}
@@ -173,11 +179,11 @@
     </div>
   {% endfor %}
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
 
 </div>
-   
+
     </div>
   </div>
 </div>
@@ -196,7 +202,7 @@
   </a>
   <p>Подняться в верх </p>
 </footer>
- 
+
 
 
 

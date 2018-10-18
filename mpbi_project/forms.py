@@ -1,18 +1,19 @@
 from django import forms
+from .models import Contact
 
 
-class ContactForm(forms.Form):
+class ContactForm(forms.ModelForm):
     name = forms.CharField(max_length=30)
     email = forms.EmailField(max_length=254)
     message = forms.CharField(
         max_length=2000,
         widget=forms.Textarea(),
-        help_text='Write here your message!'
+        # help_text='Write here your message!'
     )
-    source = forms.CharField(
-        max_length=50,
-        widget=forms.HiddenInput()
-    )
+
+    class Meta:
+        model = Contact
+        fields = ('name', 'email', 'message',)
 
     #def clean(self):
         #cleaned_data = super(ContactForm, self).clean()
