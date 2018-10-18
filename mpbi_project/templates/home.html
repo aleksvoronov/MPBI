@@ -1,0 +1,208 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>МПБИ</title>
+    <link rel="shortcut icon" href="{% static 'img/Favicon.png'%}" />
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage"><img src="{% static 'img/logo.png'%}" alt=""></a>
+            </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#mypage">Главная</a></li>
+        <li><a href="#about_us">О нас</a></li>
+        <li><a href="#main_project">Наши работы</a></li>
+        
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+        </div>
+    </nav>
+    <div id="mypage"></div>
+    <header> 
+    <div class="container">
+    
+        <h1>МЕТПРОМСТРОЙ ИНВЕСТ</h1>
+    <h3>Здесь рассказывается об устройстве социальной составляющей проекта,
+     а также перечисляются актуальные задачи и работы.
+
+Если вы хотите взяться за дело, но не знаете как, посетите нашу справочную страницу.
+ Если вы пришли с конкретным вопросом и не знаете, куда обратиться,
+  загляните сюда или напишите на форум вопросов.
+
+В русском разделе Википедии за всё время зарегистрировалось 2 381 865 участников,
+ и 10 029 из них сегодня помогают обустраивать энциклопедию.
+  Если вы ещё не один из них — присоединяйтесь!</h3>
+    </div>
+    
+
+     </header>
+     <div class="about_us" id='about_us'>
+
+     <div class="container text-center">
+     <h2>МЕТ.ПРОМ.БУТ.ИНВЕСТ</h2>
+     <p>Мы собираемся создать простой блог!
+
+Первый шаг — создать новый проект Django.
+ В сущности, это значит, что мы запустим несколько стандартных скриптов из поставки Django,
+  которые создадут для нас скелет проекта. Это просто куча каталогов и файлов, которые мы используем позже.
+
+Названия этих каталогов и файлов очень важны для Django. Ты не должна переименовывать их.
+ Перемещать их в другое место тоже не самая удачная идея. Django необходима определенная структура,
+  чтобы иметь возможность найти важные вещи.</p>
+     </div>
+     </div>
+<div class="main_project slidenim ">
+<div class="container">
+<div id="main_project" class=" text-center bg-grey ">
+  <h2>Наши работы</h2><br>
+  <h4>What we have created</h4>
+  <div class="row ">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/1.jpg'%}" alt="" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/2.jpg'%}" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/3.jpg'%}" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+   <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/4.jpg'%}" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/5.jpg'%}" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{% static 'img/6.jpg'%}" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+</div>
+</div>
+<br>
+<div id="contact" class="container bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Украина, г.Запорожье</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span></p>
+    </div>
+   <div class="col-sm-4">
+   <div class="col-sm-4"></div>
+<form method="post" novalidate>
+  {% csrf_token %}
+
+  {% for hidden_field in form.hidden_fields %}
+    {{ hidden_field }}
+  {% endfor %}
+
+  {% if form.non_field_errors %}
+    <div class="alert alert-danger" role="alert">
+      {% for error in form.non_field_errors %}
+        {{ error }}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% for field in form.visible_fields %}
+    <div class="form-group">
+      {{ field.label_tag }}
+
+      {% if form.is_bound %}
+        {% if field.errors %}
+          {% render_field field class="form-control is-invalid" %}
+          {% for error in field.errors %}
+            <div class="invalid-feedback">
+              {{ error }}
+            </div>
+          {% endfor %}
+        {% else %}
+          {% render_field field class="form-control is-valid" %}
+        {% endif %}
+      {% else %}
+        {% render_field field class="form-control" %}
+      {% endif %}
+
+      {% if field.help_text %}
+        <small class="form-text text-muted">{{ field.help_text }}</small>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+   
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class=" text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up" ></span>
+  </a>
+  <p>Подняться в верх </p>
+</footer>
+ 
+
+
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>

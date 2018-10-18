@@ -1,0 +1,164 @@
+.navbar-inverse {
+  background-color: #203a86;
+  border-color: #203a86;
+}
+
+.navbar-brand {
+  padding: 5px 7px;
+}
+
+.navbar-brand img {
+  width: 95px;
+}
+
+.navbar-brand .navbar-brand nav.navbar-inverse ul.navbar-nav a:hover, nav.navbar-inverse ul.navbar-nav a:visited, nav.navbar-inverse ul.navbar-nav a:focus, nav.navbar-inverse ul.navbar-nav a:active {
+  background: #254c78 !important;
+  background-color: rgb(37, 76, 120);
+}
+
+nav.navbar-inverse ul.navbar-nav a:hover {
+  border-color: #2dc6ef;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #098fb3;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #e7e9f0;
+}
+
+nav.navbar-inverse ul.navbar-nav a {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+}
+
+nav.navbar-inverse ul.navbar-nav a:hover, nav.navbar-inverse ul.navbar-nav a:visited, nav.navbar-inverse ul.navbar-nav a:focus, nav.navbar-inverse ul.navbar-nav a:active {
+  background: #254c78;
+}
+
+nav.navbar-inverse ul.navbar-nav a:hover {
+  border-color: #2dc6ef;
+}
+
+nav.navbar-inverse li.divider {
+  background: #ccc;
+}
+
+/***************************
+1. Navigation
+***************************/
+
+.caret-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/***************************
+2. Navigation
+***************************/
+
+a.list-group-item {
+  height: auto;
+  min-height: 220px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc
+}
+
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+
+.btn-tw:hover {
+  color: #fff;
+  background-color: #59b5fa;
+}
+
+header {
+  background-image: url(/static/img/dompech1_01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 730px;
+}
+
+header h1 {
+  color: #1d4374;
+  margin-top: 200px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+header h3 {
+  color: #1d4374;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.about_us {
+  background-color: #e7eaea;
+  padding: 40px;
+}
+
+footer {
+  background-color: #203a86;
+  min-height: 70px;
+  padding: 10px;
+}
